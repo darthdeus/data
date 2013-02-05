@@ -535,7 +535,12 @@ var states = {
         didChangeData: didChangeData,
 
         finishedMaterializing: function(manager) {
+          var record = get(manager, 'record');
           manager.transitionTo('loaded.saved');
+
+          Ember.run.once(function() {
+            record.trigger('didMaterialize');
+          });
         },
 
         // SUBSTATES

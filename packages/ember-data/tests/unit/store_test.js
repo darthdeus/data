@@ -484,6 +484,10 @@ asyncTest("a record receives a didLoad callback when it has finished loading", f
   var Person = DS.Model.extend({
     didLoad: function() {
       ok("The didLoad callback was called");
+    },
+
+    didMaterialize: function() {
+      ok("The didMaterialize callback was called");
     }
   });
 

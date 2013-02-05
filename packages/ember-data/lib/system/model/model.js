@@ -42,6 +42,7 @@ DS.Model = Ember.Object.extend(Ember.Evented, LoadPromise, {
     return store.serialize(this, options);
   },
 
+  didMaterialize: Ember.K,
   didLoad: Ember.K,
   didReload: Ember.K,
   didUpdate: Ember.K,
