@@ -31,6 +31,8 @@ var set = Ember.set;
 */
 
 Ember.onLoad('Ember.Application', function(Application) {
+  Ember.assert('You are using jQuery 1.9.0 which has serious issues with jQuery.ajax, please upgrade to 1.9.1', jQuery.fn.jquery !== '1.9.0');
+
   if (Application.registerInjection) {
     Application.registerInjection({
       name: "store",

@@ -56,7 +56,7 @@ To run multiple packages, you can separate them with commas. You can run all the
 
 <http://localhost:9292/?package=all>
 
-You can also pass `jquery=VERSION` in the test URL to test different versions of jQuery. Default is 1.9.0.
+You can also pass `jquery=VERSION` in the test URL to test different versions of jQuery. Default is 1.9.1.
 
 ### From the CLI
 
